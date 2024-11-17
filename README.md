@@ -1,12 +1,9 @@
 ## Example 
 ```code
-const nayan = require('your-project-name');
+const {alldown} = require("rana-media-downloader");
+const url = 'url' // past url
 
-nayan.alldown('url')
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error downloading:', error);
-  });
+  alldown(url).then(data => {
+  console.log(data)
+    });
 ```
